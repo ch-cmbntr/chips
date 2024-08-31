@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=https://taskfile.dev/schema.json
+version: "3"
+
+tasks:
+  default:
+    cmds:
+      - echo "TODO"
+
+  publish:dry-run:
+    cmds:
+      - bun x jsr publish --dry-run --allow-dirty
+
+  publish:jsr:
+    prompt: "Publish to jsr.io?"
+    deps:
+      - publish:dry-run
+    cmds:
+      - bun x jsr publish

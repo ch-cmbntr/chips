@@ -1,0 +1,17 @@
+{
+  "name": "@chips/proxy",
+  "version": "0.0.1",
+  "license":"MIT",
+  "module": "mod.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.4.0"
+  },
+  "dependencies": {
+    "@effect/platform-bun": "^0.43.0",
+    "effect": "^3.7.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "@chips/proxy",
+  "version": "0.0.1",
+  "license":"MIT",
+  "exports": { ".": "./mod.ts" }
+}
